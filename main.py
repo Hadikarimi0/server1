@@ -4,8 +4,8 @@ import random
 from pyrubi.types import Message
 import copy
 bot = Client(session="bot1")
-gap = bot.join_chat('https://rubika.ir/joing/GACEACIF0BUNDVUWLFUZMIKRAGUCTDRZ')['group']['group_guid']
-print(gap)
+#gap = bot.join_chat('https://rubika.ir/joing/GACEACIF0BUNDVUWLFUZMIKRAGUCTDRZ')['group']['group_guid']
+#print(gap)
 hh = bot.get_messages('c0oX5T0640e874edc13442cb4dd0a403',None)['messages'][:1]
 for m in hh:
     xx = bot.get_download_link('c0oX5T0640e874edc13442cb4dd0a403',m['message_id'])
@@ -17,7 +17,7 @@ black_list = []
 guid2 = ""
 on_off = True
 robo = ['bot2','bot3']
-guid = copy.deepcopy(gap)
+guid = "g0EVYQf06e7cc64c53b48fcd9cae6be3"
 bot.send_text(guid, 'bot is online|')
 def send(m):
     global ids
